@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Build outputs
+build/
+*.app
+*.dmg
+
+# Temporary files
+/tmp/
+*.swp
+*~
