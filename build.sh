@@ -24,7 +24,7 @@ SOURCES=(
   "$DIR/Sources/Views/ItemRowView.swift"
   "$DIR/Sources/Views/SettingsView.swift"
   "$DIR/Sources/Views/ContentView.swift"
-  "$DIR/Sources/main.swift"
+  "$DIR/Sources/iConverterApp.swift"
 )
 
 # 1. Compile for Apple Silicon (M1, M2, M3, M4, M5, Pro, Max, Ultra)

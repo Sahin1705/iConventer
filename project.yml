@@ -1,0 +1,27 @@
+name: iConverter
+options:
+  bundleIdPrefix: com.sahin
+  deploymentTarget:
+    macOS: "13.0"
+targets:
+  iConverter:
+    type: application
+    platform: macOS
+    sources:
+      - Sources
+      - path: Resources/AppIcon.icns
+      - path: Resources/iConverter ile Çevir.workflow
+    settings:
+      base:
+        PRODUCT_NAME: iConverter
+        PRODUCT_BUNDLE_IDENTIFIER: com.sahin.iconverter
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        DEVELOPMENT_TEAM: LS72ZD482V
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_IDENTITY: "Apple Development"
+        CODE_SIGN_ENTITLEMENTS: Resources/iConverter.entitlements
+        INFOPLIST_FILE: Resources/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        ENABLE_HARDENED_RUNTIME: YES
+        SWIFT_VERSION: "5.0"

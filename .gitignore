@@ -8,6 +8,10 @@ build/
 *.app
 *.dmg
 
+# Xcode
+*.xcuserdata
+DerivedData/
+
 # Temporary files
 /tmp/
 *.swp
