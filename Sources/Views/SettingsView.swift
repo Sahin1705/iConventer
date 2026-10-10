@@ -93,9 +93,9 @@ public struct SettingsSheetView: View {
                         Slider(value: Binding(
                             get: { Double(queue.concurrencyLimit) },
                             set: { queue.concurrencyLimit = Int($0) }
-                        ), in: 1...16, step: 1)
+                        ), in: 1...32, step: 1)
                         
-                        Text("Apple M5 için önerilen: 10 çekirdek (Tüm P ve E çekirdekleri tam kapasite çalışır)")
+                        Text("\(HardwareInfo.shared.chipName) için önerilen: \(HardwareInfo.shared.coreCount) çekirdek (Tüm çekirdekler tam kapasite çalışır)")
                             .font(.caption)
                             .foregroundColor(.secondary)
                     }

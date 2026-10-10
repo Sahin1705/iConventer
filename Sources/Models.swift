@@ -38,10 +38,10 @@ public enum TargetFormat: String, CaseIterable, Identifiable {
     
     // Videos
     case mp4_remux = "MP4 (Yıldırım Hızı Remux • 0.2s)"
-    case mp4_h264 = "MP4 (H.264 M5 Donanım)"
-    case mp4_hevc = "MP4 (HEVC / H.265 M5)"
+    case mp4_h264 = "MP4 (H.264 Donanım Kodlayıcı)"
+    case mp4_hevc = "MP4 (HEVC / H.265 Donanım)"
     case mov_remux = "MOV (Yıldırım Hızı Remux)"
-    case mov_h264 = "MOV (H.264 M5 Donanım)"
+    case mov_h264 = "MOV (H.264 Donanım Kodlayıcı)"
     case mov_hevc = "MOV (HEVC / ProRes)"
     case mkv = "MKV"
     case webm = "WebM"
@@ -99,7 +99,7 @@ public enum TargetFormat: String, CaseIterable, Identifiable {
         case .mp4_remux, .mov_remux:
             return "⚡️ Anında Remux (Kayıpsız)"
         case .mp4_h264, .mp4_hevc, .mov_h264, .mov_hevc:
-            return "⚡️ M5 Donanım Hızlandırıcı"
+            return "⚡️ Donanım Hızlandırıcı"
         default:
             return ""
         }

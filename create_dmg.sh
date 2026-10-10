@@ -27,7 +27,7 @@ cp -R "$APP_PATH" "$STAGING_DIR/"
 ln -s /Applications "$STAGING_DIR/Applications"
 
 # Copy DMG Background
-cp /tmp/dmg_background.png "$STAGING_DIR/.background/background.png"
+cp "$DIR/Resources/dmg_background.png" "$STAGING_DIR/.background/background.png"
 
 # Add Finder Quick Action Installer script inside DMG
 cat << 'EOF' > "$STAGING_DIR/Hızlı İşlemi Yükle.command"
