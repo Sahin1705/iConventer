@@ -59,7 +59,7 @@ public struct ContentView: View {
                 }
                 
                 VStack(alignment: .leading, spacing: 1) {
-                    Text("iConventer")
+                    Text("iConverter")
                         .font(.system(size: 16, weight: .bold))
                     Text("Apple Silicon Ultra-Hızlı Medya Çevirici")
                         .font(.system(size: 10))

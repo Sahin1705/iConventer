@@ -2,9 +2,9 @@
 set -e
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-APP_NAME="iConventer"
+APP_NAME="iConverter"
 APP_PATH="$DIR/build/$APP_NAME.app"
-DMG_NAME="iConventer"
+DMG_NAME="iConverter"
 OUTPUT_DMG="/Users/misa/Desktop/$DMG_NAME.dmg"
 TEMP_DMG="/tmp/$DMG_NAME-temp.dmg"
 STAGING_DIR="/tmp/dmg_staging"
@@ -33,7 +33,7 @@ cp "$DIR/Resources/dmg_background.png" "$STAGING_DIR/.background/background.png"
 cat << 'EOF' > "$STAGING_DIR/Hızlı İşlemi Yükle.command"
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-DEST="$HOME/Library/Services/iConventer ile Çevir.workflow"
+DEST="$HOME/Library/Services/iConverter ile Çevir.workflow"
 
 mkdir -p "$HOME/Library/Services"
 rm -rf "$DEST"
@@ -49,9 +49,9 @@ cat << 'PLIST' > "$DEST/Contents/Info.plist"
     <key>CFBundleDevelopmentRegion</key>
     <string>tr</string>
     <key>CFBundleIdentifier</key>
-    <string>com.misa.services.iconventer</string>
+    <string>com.misa.services.iconverter</string>
     <key>CFBundleName</key>
-    <string>iConventer ile Çevir</string>
+    <string>iConverter ile Çevir</string>
     <key>CFBundleShortVersionString</key>
     <string>1.0</string>
     <key>NSServices</key>
@@ -60,7 +60,7 @@ cat << 'PLIST' > "$DEST/Contents/Info.plist"
             <key>NSMenuItem</key>
             <dict>
                 <key>default</key>
-                <string>iConventer ile Çevir</string>
+                <string>iConverter ile Çevir</string>
             </dict>
             <key>NSMessage</key>
             <string>runWorkflowAsService</string>
@@ -125,7 +125,7 @@ cat << 'WFLOW' > "$DEST/Contents/document.wflow"
                     <key>COMMAND_STRING</key>
                     <string>for f in "$@"
 do
-    open -a "iConventer" "$f" 2>/dev/null || open -a "/Applications/iConventer.app" "$f" 2>/dev/null || open -a "$HOME/Desktop/iConventer.app" "$f"
+    open -a "iConverter" "$f" 2>/dev/null || open -a "/Applications/iConverter.app" "$f" 2>/dev/null || open -a "$HOME/Desktop/iConverter.app" "$f"
 done
 </string>
                     <key>CheckedForUserDefaultShell</key>
@@ -154,8 +154,8 @@ done
 WFLOW
 
 /System/Library/CoreServices/pbs -update 2>/dev/null || true
-osascript -e 'display notification "Finder sağ tık 'iConventer ile Çevir' hızlı işlemi başarıyla yüklendi!" with title "iConventer"'
-echo "✅ Finder Hızlı İşlemi başarıyla yüklendi! Artık herhangi bir dosyaya sağ tıklayıp Hızlı İşlemler > iConventer ile Çevir diyebilirsiniz."
+osascript -e 'display notification "Finder sağ tık 'iConverter ile Çevir' hızlı işlemi başarıyla yüklendi!" with title "iConverter"'
+echo "✅ Finder Hızlı İşlemi başarıyla yüklendi! Artık herhangi bir dosyaya sağ tıklayıp Hızlı İşlemler > iConverter ile Çevir diyebilirsiniz."
 EOF
 chmod +x "$STAGING_DIR/Hızlı İşlemi Yükle.command"
 
@@ -170,7 +170,6 @@ hdiutil create -srcfolder "$STAGING_DIR" -volname "$DMG_NAME" -fs HFS+ \
 echo "Mounting disk image for layout styling..."
 MOUNT_DIR=$(mktemp -d /tmp/dmg_mount_XXXXXX)
 DEVICE=$(hdiutil attach -readwrite -noverify -noautoopen "$TEMP_DMG" | egrep '^/dev/' | head -n1 | awk '{print $1}')
-MOUNT_POINT=$(hdiutil attach -readwrite -noverify -noautoopen "$TEMP_DMG" | grep "/Volumes/$DMG_NAME" | awk '{print $3}')
 
 # AppleScript to format Finder presentation
 echo "Styling window layout..."
@@ -208,6 +207,6 @@ echo "Compressing into final read-only DMG..."
 hdiutil convert "$TEMP_DMG" -format UDZO -imagekey zlib-level=9 -o "$OUTPUT_DMG"
 
 # Clean up
-rm -rf "$STAGING_DIR" "$TEMP_DMG" "/tmp/dmg_background.png" "$MOUNT_DIR"
+rm -rf "$STAGING_DIR" "$TEMP_DMG" "$MOUNT_DIR"
 
 echo "🎉 Sleek DMG created successfully at: $OUTPUT_DMG"

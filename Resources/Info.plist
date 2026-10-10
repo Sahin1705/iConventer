@@ -5,17 +5,17 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>tr</string>
     <key>CFBundleExecutable</key>
-    <string>iConventer</string>
+    <string>iConverter</string>
     <key>CFBundleIconFile</key>
     <string>AppIcon</string>
     <key>CFBundleIdentifier</key>
-    <string>com.misa.iconventer</string>
+    <string>com.misa.iconverter</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
-    <string>iConventer</string>
+    <string>iConverter</string>
     <key>CFBundleDisplayName</key>
-    <string>iConventer</string>
+    <string>iConverter</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
@@ -23,7 +23,7 @@
     <key>CFBundleVersion</key>
     <string>1</string>
     <key>LSMinimumSystemVersion</key>
-    <string>14.0</string>
+    <string>13.0</string>
     <key>NSHighResolutionCapable</key>
     <true/>
     <key>NSRequiresAquaSystemAppearance</key>
@@ -55,12 +55,12 @@
             <key>NSMenuItem</key>
             <dict>
                 <key>default</key>
-                <string>iConventer ile Çevir</string>
+                <string>iConverter ile Çevir</string>
             </dict>
             <key>NSMessage</key>
             <string>openFilesFromService</string>
             <key>NSPortName</key>
-            <string>iConventer</string>
+            <string>iConverter</string>
             <key>NSRequiredContext</key>
             <dict>
                 <key>NSApplicationIdentifier</key>

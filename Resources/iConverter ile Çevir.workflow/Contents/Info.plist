@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>tr</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.misa.services.iconventer</string>
+	<string>com.misa.services.iconverter</string>
 	<key>CFBundleName</key>
-	<string>iConventer ile Çevir</string>
+	<string>iConverter ile Çevir</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>NSServices</key>
@@ -16,7 +16,7 @@
 			<key>NSMenuItem</key>
 			<dict>
 				<key>default</key>
-				<string>iConventer ile Çevir</string>
+				<string>iConverter ile Çevir</string>
 			</dict>
 			<key>NSMessage</key>
 			<string>runWorkflowAsService</string>

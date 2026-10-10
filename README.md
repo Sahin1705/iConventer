@@ -1,16 +1,16 @@
-# ⚡️ iConventer - Ultra-Hızlı macOS Medya Çevirici
+# ⚡️ iConverter - Ultra-Hızlı macOS Medya Çevirici
 
-[![macOS](https://img.shields.io/badge/macOS-13.0%2B-blue?logo=apple)](https://github.com/Sahin1705/iConventer/releases)
+[![macOS](https://img.shields.io/badge/macOS-13.0%2B-blue?logo=apple)](https://github.com/Sahin1705/iConverter/releases)
 [![Swift](https://img.shields.io/badge/Swift-6.0-orange?logo=swift)](https://swift.org)
-[![Architecture](https://img.shields.io/badge/Architecture-Universal%202%20(Apple%20Silicon%20%2B%20Intel)-purple)](https://github.com/Sahin1705/iConventer/releases)
+[![Architecture](https://img.shields.io/badge/Architecture-Universal%202%20(Apple%20Silicon%20%2B%20Intel)-purple)](https://github.com/Sahin1705/iConverter/releases)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![GitHub release](https://img.shields.io/github/v/release/Sahin1705/iConventer?color=brightgreen)](https://github.com/Sahin1705/iConventer/releases)
+[![GitHub release](https://img.shields.io/github/v/release/Sahin1705/iConverter?color=brightgreen)](https://github.com/Sahin1705/iConverter/releases)
 
 Apple Silicon (M1, M2, M3, M4, M5) ve Intel Mac'ler için özel olarak geliştirilmiş; **0.2 saniyede kayıpsız video remux** yapabilen, **HEIC fotoğrafları anında JPEG'e** çeviren, **%100 yerel (offline)** çalışan açık kaynaklı modern macOS medya dönüştürücüsü.
 
 <p align="center">
-  <a href="https://github.com/Sahin1705/iConventer/releases/download/v1.0.0/iConventer.dmg">
-    <img src="https://img.shields.io/badge/İndir-iConventer.dmg%20(v1.0.0)-blue?style=for-the-badge&logo=apple" alt="iConventer İndir" height="45">
+  <a href="https://github.com/Sahin1705/iConverter/releases/download/v1.0.0/iConverter.dmg">
+    <img src="https://img.shields.io/badge/İndir-iConverter.dmg%20(v1.0.0)-blue?style=for-the-badge&logo=apple" alt="iConverter İndir" height="45">
   </a>
 </p>
 
@@ -18,7 +18,7 @@ Apple Silicon (M1, M2, M3, M4, M5) ve Intel Mac'ler için özel olarak geliştir
 
 ## 💻 Tüm Mac Modelleriyle %100 Uyumlu (Universal 2)
 
-iConventer, **Universal 2 Binary** mimarisiyle derlenmiştir ve piyasadaki tüm Mac cihazlarında doğal (native) donanım hızlandırmasıyla çalışır:
+iConverter, **Universal 2 Binary** mimarisiyle derlenmiştir ve piyasadaki tüm Mac cihazlarında doğal (native) donanım hızlandırmasıyla çalışır:
 
 * **MacBook Air:** M1, M2, M3, M4, M5 ve Intel modelleri
 * **MacBook Pro:** M1/M2/M3/M4 (Base, Pro, Max) ve Intel modelleri
@@ -30,7 +30,7 @@ iConventer, **Universal 2 Binary** mimarisiyle derlenmiştir ve piyasadaki tüm 
 ## 🚀 Öne Çıkan Özellikler
 
 ### ⚡️ 0.2 Saniye Yıldırım Hızı Remux (Kayıpsız)
-iPhone veya Mac ile kaydedilen MOV videoları zaten H.264/HEVC formatındadır. Çoğu çevirici videoyu baştan encode ederek 20-30 saniye harcarken, iConventer **Stream Passthrough (Remux)** teknolojisiyle kapsayıcıyı anında MP4 yapar.
+iPhone veya Mac ile kaydedilen MOV videoları zaten H.264/HEVC formatındadır. Çoğu çevirici videoyu baştan encode ederek 20-30 saniye harcarken, iConverter **Stream Passthrough (Remux)** teknolojisiyle kapsayıcıyı anında MP4 yapar.
 * 150 MB MOV dosyasını **0.2 - 0.4 saniyede** MP4'e çevirir.
 * Pikseller doğrudan kopyalandığı için **%0 kalite kaybı** yaşanır.
 
@@ -41,7 +41,7 @@ iPhone veya Mac ile kaydedilen MOV videoları zaten H.264/HEVC formatındadır. 
 
 ### 🖱️ Finder Sağ Tık "Hızlı İşlem"
 Herhangi bir dosyayı veya klasörü uygulamayı açmadan dönüştürün:
-* Dosyaya sağ tıklayın ➔ **Hızlı İşlemler ➔ "iConventer ile Çevir"**.
+* Dosyaya sağ tıklayın ➔ **Hızlı İşlemler ➔ "iConverter ile Çevir"**.
 * Dosyalar anında dönüştürme kuyruğuna aktarılır.
 
 ### 🔒 %100 Gizlilik ve Güvenlik
@@ -62,8 +62,8 @@ Herhangi bir dosyayı veya klasörü uygulamayı açmadan dönüştürün:
 
 ## 📥 Hazır Kurulum (.dmg)
 
-1. [Releases sayfasından](https://github.com/Sahin1705/iConventer/releases) **`iConventer.dmg`** dosyasını indirin.
-2. DMG dosyasını açıp **iConventer** uygulamasını **Applications (Uygulamalar)** klasörüne sürükleyin.
+1. [Releases sayfasından](https://github.com/Sahin1705/iConverter/releases) **`iConverter.dmg`** dosyasını indirin.
+2. DMG dosyasını açıp **iConverter** uygulamasını **Applications (Uygulamalar)** klasörüne sürükleyin.
 3. Sağ tık menüsünü aktifleştirmek için DMG içindeki **`Hızlı İşlemi Yükle.command`** dosyasına çift tıklayın.
 
 ---
@@ -74,8 +74,8 @@ Gereksinimler: macOS 13.0+, Xcode Komut Satırı Araçları (`xcode-select --ins
 
 ```bash
 # Projeyi klonlayın
-git clone https://github.com/Sahin1705/iConventer.git
-cd iConventer
+git clone https://github.com/Sahin1705/iConverter.git
+cd iConverter
 
 # Universal 2 uygulamasını derleyin (arm64 + x86_64)
 ./build.sh
@@ -88,4 +88,3 @@ cd iConventer
 
 ## 📄 Lisans
 Bu proje [MIT Lisansı](LICENSE) kapsamında açık kaynaklı olarak paylaşılmaktadır. Özgürce kullanabilir, katkıda bulunabilir ve geliştirebilirsiniz.
-EOF

@@ -31,7 +31,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 }
 
 @main
-struct iConventerApp: App {
+struct iConverterApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {

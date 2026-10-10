@@ -2,7 +2,7 @@
 set -e
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-APP_NAME="iConventer"
+APP_NAME="iConverter"
 BUILD_DIR="$DIR/build"
 APP_BUNDLE="$BUILD_DIR/$APP_NAME.app"
 DESKTOP_APP="/Users/misa/Desktop/$APP_NAME.app"
